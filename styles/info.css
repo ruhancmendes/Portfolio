@@ -52,3 +52,8 @@
   font: var(--text-md);
   color: var(--gray-500);
 }
+.seta{
+  display:flex;
+  padding-top: 94px;
+  justify-content: center;
+}
