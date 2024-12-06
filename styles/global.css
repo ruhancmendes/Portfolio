@@ -25,3 +25,14 @@
   --text-md: 400 16px/140% var(--font-family-3);
   --text-sm: 400 14px/140% var(--font-family-3);
 }
+.bg-header {
+  background-color: var(--gray-200);
+}
+.container {
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  height: 750px;
+  margin-inline: auto;
+  max-width: 1366px;
+  padding: 120px 163px 183px 163px;
+}
