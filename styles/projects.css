@@ -1,0 +1,62 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 120px 144px 120px;
+  gap: 56px;
+  max-width: 1366px;
+  margin-inline: auto;
+}
+#title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.title-1 {
+  font-family: var(--font-family-2);
+  font: var(--subtitle);
+  color: var(--red);
+}
+.title-2 {
+  font-family: var(--font-family-1);
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+#destaques {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+.projectcard img {
+  width: 306px;
+  height: 156px;
+  border-radius: 8px;
+}
+.projectcard {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 280px;
+  padding: 12px;
+  gap: 20px;
+  background-color: var(--gray-300);
+  border-radius: 12px;
+}
+.name {
+  font-family: var(--font-family-1);
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+.description {
+  font-family: var(--font-family-3);
+  font: var(--text-sm);
+  color: var(--gray-500);
+}
+.projectcard:hover {
+  border: var(--blue) 1.5px solid;
+}
+.projectcard:hover .name {
+  color: var(--blue);
+}

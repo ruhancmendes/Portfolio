@@ -36,3 +36,6 @@
   max-width: 1366px;
   padding: 120px 163px 183px 163px;
 }
+.bg-destaques{
+  background-color: var(--gray-200);
+}
