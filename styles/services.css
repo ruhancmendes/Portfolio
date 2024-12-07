@@ -1,0 +1,47 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 88px 120px 120px 120px;
+  gap: 56px;
+  max-width: 1366px;
+  margin-inline: auto;
+}
+.cards {
+  display: flex;
+  flex-flow: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  width: 280px;
+  height: 155px;
+  border-radius: 12px;
+  border: var(--gray-200) 2px solid;
+  padding: 20px;
+  gap: 20px;
+}
+.card img {
+  width: 48px;
+  height: 48px;
+}
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.jobs {
+  font-family: var(--font-family-1);
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+.jobs-2 {
+  font-family: var(--font-family-3);
+  font: var(--text-sm);
+  color: var(--gray-500);
+}
+.box-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

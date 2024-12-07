@@ -39,3 +39,6 @@
 .bg-destaques{
   background-color: var(--gray-200);
 }
+.bg-services{
+  background-color: var(--gray-100);
+}
