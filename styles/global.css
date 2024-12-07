@@ -42,3 +42,6 @@
 .bg-services{
   background-color: var(--gray-100);
 }
+.bg-contact{
+  background-color: var(--gray-200);
+}
