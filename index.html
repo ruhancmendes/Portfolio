@@ -1,238 +1,150 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ruhan's Portfolio</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="bg-header">
-      <div class="container">
-        <div class="info">
-          <header class="header">
-            <div class="avatar">
-              <img src="assets/avatar-ruhan.png" alt="Foto de Ruhan Mendes" />
-            </div>
-            <div class="about-me">
-              <div class="fact-1">
-                Hello World! Meu nome é <span>Ruhan Mendes</span> e sou
-              </div>
-              <div class="fact-2">Desenvolvedor Fullstack</div>
-              <div class="fact-3">
-                Transformo necessidades em aplicações reais, evolventes e
-                funcionais. Desenvolvo sistemas através da minha paixão pela
-                tecnologia, contribuindo com soluções inovadoras e eficazes para
-                desafios complexos.
-              </div>
-            </div>
-          </header>
-          <ul id="tags">
-            <li class="content-tag">
-              <img src="assets/icons/GitHub.svg" alt="github logo" />
-              <span>GitHub</span>
-            </li>
-            <li class="content-tag">
-              <img src="assets/icons/HTML.svg" alt="html logo" />
-              <span>HTML</span>
-            </li>
-            <li class="content-tag">
-              <img src="assets/icons/CSS.svg" alt="css logo" />
-              <span>CSS</span>
-            </li>
-            <li class="content-tag">
-              <img src="assets/icons/JavaScript.svg" alt="javascript logo" />
-              <span>JavaScript</span>
-            </li>
-            <li class="content-tag">
-              <img src="assets/icons/React.svg" alt="react logo" />
-              <span>React</span>
-            </li>
-            <li class="content-tag">
-              <img src="assets/icons/node.js.svg" alt="node.js logo" />
-              <span>Node.js</span>
-            </li>
-          </ul>
-        </div>
-        <div class="seta">
-          <img
-            src="assets/icons/CaretDoubleDown.svg"
-            alt="seta dupla para baixo"
-          />
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ruhan Mendes — Desenvolvedor Fullstack</title>
+  <meta name="description" content="Portfólio de Ruhan Mendes, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor fullstack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Spectral:ital,wght@0,300;1,300&family=DM+Mono:wght@400;500&family=Grenze:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar__title">Desenvolvedor Fullstack</div>
+    <nav class="topbar__nav">
+      <a href="#projetos">Projetos</a>
+      <a href="#certificacoes">Certificações</a>
+      <button class="theme-toggle" id="theme-toggle" type="button">☀ Dia</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Ruhan<br>Mendes</h1>
+        <div class="ornament" aria-hidden="true"><span></span><span>✦</span><span></span></div>
+        <p class="hero__text">Olá, estudo Análise e Desenvolvimento de Sistemas e estou me aprimorando como desenvolvedor fullstack, meu foco é transformar necessidades em aplicações reais.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="mailto:ruhancmendes@gmail.com">Fale comigo</a>
+          <a class="btn btn--ghost" href="https://github.com/ruhancmendes" target="_blank" rel="noopener">Ver GitHub ↗</a>
         </div>
       </div>
-    </div>
-    <div class="bg-destaques">
-      <div class="projects">
-        <section id="title">
-          <span class="title-1">Meu trabalho</span>
-          <span class="title-2">Veja os projetos em destaque</span>
-        </section>
-        <section id="destaques">
-          <a
-            class="projectcard"
-            href="https://ruhancmendes.github.io/Projeto-Perfil-de-viagens/"
-            target="_blank"
-          >
-            <img
-              src="assets/images/Thumbnail_Project-01.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Travelgram</span>
-            <span class="description"
-              >Rede social onde as pessoas mostram os registros de suas viagens
-              pelo mundo</span
-            >
-          </a>
-          <a
-            class="projectcard"
-            href="https://ruhancmendes.github.io/fullstack-projeto-portal-de-noticias/"
-            target="_blank"
-          >
-            <img
-              src="assets/images/Thumbnail_Project-02.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Tech News</span>
-            <span class="description"
-              >Homepage de um portal de notícias sobre a área de
-              tecnologia</span
-            >
-          </a>
-          <a
-            class="projectcard"
-            href="https://ruhancmendes.github.io/projeto-pagina-de-receita/"
-            target="_blank"
-          >
-            <img
-              src="assets/images/Thumbnail_Project-03.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Página de Receita</span>
-            <span class="description"
-              >Página com o passo a passo de uma receita para cupcakes</span
-            >
-          </a>
-          <a class="projectcard" href="https://ruhancmendes.github.io/Projeto-Zingen/" target="_blank">
-            <img
-              src="assets/images/Thumbnail_Project-04.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Zingen</span>
-            <span class="description"
-              >Landing Page completa e responsiva de um aplicativo de
-              Karaokê</span
-            >
-          </a>
-          <a class="projectcard" href="#" target="_blank">
-            <img
-              src="assets/images/Thumbnail_Project-05.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Refund</span>
-            <span class="description"
-              >Um sistema para pedido e acompanhamento de reembolso
-            </span>
-          </a>
-          <a
-            class="projectcard"
-            href="https://ruhancmendes.github.io/projeto-local-turistico/"
-            target="_blank"
-          >
-            <img
-              src="assets/images/Thumbnail_Project-06.png"
-              alt="Miniatura da página inicial do projeto"
-            />
-            <span class="name">Página de Turismo</span>
-            <span class="description"
-              >Página com as principais informações para quem quer viajar para
-              Busan</span
-            >
-          </a>
-        </section>
-      </div>
-    </div>
-    <div class="bg-services">
-      <div class="services">
-        <section id="title">
-          <span class="title-1">Meus serviços</span>
-          <span class="title-2">Como posso ajudar o seu negócio</span>
-        </section>
-        <div class="cards">
-          <div class="card">
-            <span class="box-card">
-              <img src="assets/icons/Devices.svg" alt="" />
-              <div class="job">
-                <section class="jobs">Websites e Aplicativos</section>
-                <section class="jobs-2">Desenvolvimento de interfaces</section>
-              </div>
-            </span>
-          </div>
-          <div class="card">
-            <span class="box-card">
-              <img src="assets/icons/HardDrives.svg" alt="" />
-              <div class="job">
-                <section class="jobs">API e banco de dados</section>
-                <section class="jobs-2">Criação de serviços do sistema</section>
-              </div>
-            </span>
-          </div>
-          <div class="card">
-            <span class="box-card">
-              <img src="assets/icons/Infinity.svg" alt="" />
-              <div class="job">
-                <section class="jobs">DevOps</section>
-                <section class="jobs-2">
-                  Gestão e infraestrutura da aplicação
-                </section>
-              </div>
-            </span>
-          </div>
+      <div class="avatar-wrap">
+        <div class="avatar">
+          <span class="avatar__ring" aria-hidden="true"></span>
+          <img id="pfp" src="assets/pfp_escuro.jpg" alt="Foto de perfil de Ruhan Mendes">
         </div>
       </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group"><span>REACT</span><span>✦</span><span>NODE</span><span>✦</span><span>TYPESCRIPT</span><span>✦</span><span>POSTGRES</span><span>✦</span><span>DOCKER</span><span>✦</span><span>GIT</span><span>✦</span><span>HTML &amp; CSS</span><span>✦</span></div>
+        <div class="marquee__group"><span>REACT</span><span>✦</span><span>NODE</span><span>✦</span><span>TYPESCRIPT</span><span>✦</span><span>POSTGRES</span><span>✦</span><span>DOCKER</span><span>✦</span><span>GIT</span><span>✦</span><span>HTML &amp; CSS</span><span>✦</span></div>
+      </div>
     </div>
-    <div class="bg-contact">
-      <div class="contact">
-        <div class="contato">
-          <span class="con-1">
-            Contato
+
+    <section class="section section--projects" id="projetos">
+      <div class="section__head">
+        <div class="section__num">— I —</div>
+        <h2>Projetos</h2>
+        <p>Projetos em destaque</p>
+      </div>
+      <div class="grid">
+        <button class="card" type="button" data-project="zingen">
+          <img class="card__img" src="assets/zingen-captura.png" alt="Captura da landing page Zingen" loading="lazy">
+          <span class="card__body">
+            <span class="card__row"><span class="card__title">Zingen</span><span class="card__more">DETALHES +</span></span>
+            <span class="card__desc">Landing page completa e responsiva de um aplicativo de karaokê</span>
+            <span class="tags"><span>HTML</span><span>CSS</span><span>RESPONSIVO</span></span>
           </span>
-          <span class="con-2">
-            Gostou do meu trabalho?
+        </button>
+        <button class="card" type="button" data-project="jogo">
+          <img class="card__img card__img--center" src="assets/jogo-captura.png" alt="Captura do Jogo da Palavra" loading="lazy">
+          <span class="card__body">
+            <span class="card__row"><span class="card__title">Jogo da Palavra</span><span class="card__more">DETALHES +</span></span>
+            <span class="card__desc">Jogo web de adivinhar a palavra, feito em React</span>
+            <span class="tags"><span>REACT</span><span>TYPESCRIPT</span><span>VITE</span></span>
           </span>
-          <span class="con-3">
-            Entre em contato ou acompanhe as minhas redes sociais!
+        </button>
+        <button class="card" type="button" data-project="lp">
+          <img class="card__img" src="assets/lp-captura.png" alt="Captura da landing page Encantos Literários" loading="lazy">
+          <span class="card__body">
+            <span class="card__row"><span class="card__title">Encantos Literários</span><span class="card__more">DETALHES +</span></span>
+            <span class="card__desc">Landing page de clube de assinatura, com animações em CSS</span>
+            <span class="tags"><span>HTML</span><span>CSS</span><span>ANIMAÇÕES</span></span>
           </span>
-        </div>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/ruhancmendes/" class="socialbutton" target="_blank">
-            <img src="assets/icons/LinkedinLogo.svg" alt="logo do linkedin" class="social">
-            <span class="social-text">LinkedIn</span>
-            <img src="assets/icons/ArrowUpRight.svg" alt="seta para cima e direita" class="seta">
-          </a>
-          <a href="https://www.instagram.com/ruhanc/" class="socialbutton" target="_blank">
-            <img src="assets/icons/InstagramLogo.svg" alt="logo do instagram" class="social">
-            <span class="social-text">Instagram</span>
-            <img src="assets/icons/ArrowUpRight.svg" alt="seta para cima e direita" class="seta">
-          </a>
-          <a href="https://github.com/ruhancmendes" class="socialbutton" target="_blank">
-            <img src="assets/icons/GithubLogo.svg" alt="logo do github" class="social">
-            <span class="social-text">GitHub</span>
-            <img src="assets/icons/ArrowUpRight.svg" alt="seta para cima e direita" class="seta">
-          </a>
-          <a href="#" class="socialbutton" target="_blank">
-            <img src="assets/icons/EnvelopeSimple.svg" alt="logo do e-mail" class="social">
-            <span class="social-text">E-mail</span>
-            <img src="assets/icons/ArrowUpRight.svg" alt="seta para cima e direita" class="seta">
-          </a>
+        </button>
+        <button class="card" type="button" data-project="refund">
+          <img class="card__img" src="assets/refund-captura.png" alt="Captura do sistema Refund" loading="lazy">
+          <span class="card__body">
+            <span class="card__row"><span class="card__title">Refund</span><span class="card__more">DETALHES +</span></span>
+            <span class="card__desc">Sistema de solicitação de reembolso em JavaScript</span>
+            <span class="tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></span>
+          </span>
+        </button>
+        <button class="card" type="button" data-project="lista">
+          <img class="card__img" src="assets/lista-captura.png" alt="Captura da lista de compras Quicklist" loading="lazy">
+          <span class="card__body">
+            <span class="card__row"><span class="card__title">Quicklist</span><span class="card__more">DETALHES +</span></span>
+            <span class="card__desc">Lista de compras para adicionar e remover itens</span>
+            <span class="tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span></span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="certificacoes">
+      <div class="section__head">
+        <div class="section__num">— II —</div>
+        <h2>Certificações</h2>
+        <p>Cursos e formações concluídas</p>
+      </div>
+      <div class="grid" id="cert-grid"></div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="section__num">— III —</div>
+      <h2>Vamos trabalhar juntos</h2>
+      <a class="contact__mail" href="mailto:ruhancmendes@gmail.com">ruhancmendes@gmail.com</a>
+      <div class="contact__links">
+        <a href="https://github.com/ruhancmendes" target="_blank" rel="noopener">GITHUB ↗</a>
+        <a href="https://www.linkedin.com/in/ruhancmendes/" target="_blank" rel="noopener">LINKEDIN ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>© 2026 RUHAN MENDES</span><span>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</span></footer>
+
+  <div class="overlay" id="proj-dialog">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="proj-title">
+      <img class="dialog__shot" id="proj-img" src="" alt="">
+      <div class="dialog__body">
+        <div class="dialog__head"><span class="dialog__title" id="proj-title"></span><span class="dialog__kicker" id="proj-kicker"></span></div>
+        <p class="dialog__desc" id="proj-desc"></p>
+        <div class="tags" id="proj-tags"></div>
+        <div class="dialog__actions">
+          <button class="pill" type="button" data-close>FECHAR ✕</button>
+          <a class="pill" id="proj-code" href="#" target="_blank" rel="noopener">CÓDIGO</a>
+          <a class="pill pill--solid" id="proj-site" href="#" target="_blank" rel="noopener">VER SITE ↗</a>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <div class="overlay" id="cert-dialog">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="cert-title">
+      <img class="dialog__cert" id="cert-img" src="" alt="">
+      <div class="dialog__certinfo">
+        <div><span class="dialog__title" id="cert-title"></span><span class="dialog__sub" id="cert-sub"></span></div>
+        <button class="pill" type="button" data-close>FECHAR ✕</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
 </html>
