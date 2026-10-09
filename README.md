@@ -1,7 +1,7 @@
 <h1 align="center"> 🌐 Portfólio — Ruhan Mendes </h1>
 
 <p align="center">
-Meu portfólio pessoal: uma página responsiva com os meus projetos, certificações e contatos. Começou como um desafio prático da formação Fullstack da Rocketseat e evoluiu para o site que me apresenta como desenvolvedor. <br/>
+Meu portfólio pessoal: uma página responsiva com os meus projetos, certificações e contatos. Começou como um desafio prático e evoluiu para o site que me apresenta como desenvolvedor. <br/>
 </p>
 
 <p align="center">
