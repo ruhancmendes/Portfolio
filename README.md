@@ -7,7 +7,6 @@ Meu portfólio pessoal: uma página responsiva com os meus projetos, certificaç
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-rodar">Como rodar</a>
 </p>
 
 <p align="center">
@@ -32,13 +31,6 @@ Um portfólio de uma página que apresenta quem eu sou, os projetos que constru�
 - **Projetos e certificações:** cards que abrem os detalhes, com link para o código e para o site de cada projeto.
 - **Acessibilidade e desempenho:** HTML semântico, imagens com texto alternativo e carregamento preguiçoso.
 
-## 🚀 Como rodar
-
-Não há dependências. Clone o repositório e abra o `index.html` no navegador:
-
-```bash
-git clone https://github.com/ruhancmendes/Portfolio.git
-```
 
 <br>
 
@@ -78,10 +70,3 @@ A single-page portfolio that presents who I am, the projects I built and the cou
 - **Projects and certifications:** cards that open their details, with links to each project's code and live site.
 - **Accessibility and performance:** semantic HTML, images with alt text and lazy loading.
 
-## 🚀 Running locally
-
-There are no dependencies. Clone the repository and open `index.html` in your browser:
-
-```bash
-git clone https://github.com/ruhancmendes/Portfolio.git
-```
