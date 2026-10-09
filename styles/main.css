@@ -12,6 +12,8 @@
   --hov: #e0336f;
   --ctahov: #a8003c;
   --glow: 0 14px 36px rgba(122, 0, 43, .55);
+  /* side padding that keeps content centered in a max-width column on wide screens */
+  --pad: max(56px, calc((100% - 1320px) / 2));
 }
 
 :root[data-theme="light"] {
@@ -49,7 +51,7 @@ button { font-family: inherit; }
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 22px 56px;
+  padding: 22px var(--pad);
   border-bottom: 1px solid var(--line);
 }
 
@@ -87,16 +89,16 @@ button { font-family: inherit; }
 
 /* ---------- hero ---------- */
 .hero {
-  padding: 84px 56px 72px;
+  padding: 84px var(--pad) 72px;
   display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 64px;
+  grid-template-columns: 1fr clamp(280px, 30vw, 420px);
+  gap: clamp(40px, 5vw, 80px);
   align-items: center;
 }
 
 .hero h1 {
   margin: 0;
-  font: 700 128px/.95 'Grenze', serif;
+  font: 700 clamp(64px, 9.5vw, 148px)/.95 'Grenze', serif;
   letter-spacing: -.01em;
 }
 
@@ -120,8 +122,8 @@ button { font-family: inherit; }
 
 .hero__text {
   margin: 0 0 36px;
-  max-width: 500px;
-  font: 300 19px/1.7 'Spectral', serif;
+  max-width: 540px;
+  font: 300 clamp(16px, 1.4vw, 20px)/1.7 'Spectral', serif;
   color: var(--muted);
   text-wrap: pretty;
 }
@@ -158,7 +160,7 @@ button { font-family: inherit; }
 
 .avatar {
   position: relative;
-  width: 340px;
+  width: clamp(220px, 28vw, 400px);
   max-width: 100%;
   aspect-ratio: 1;
   border-radius: 50%;
@@ -211,7 +213,7 @@ button { font-family: inherit; }
 }
 
 /* ---------- sections ---------- */
-.section { padding: 76px 56px; }
+.section { padding: 76px var(--pad); }
 
 .section--projects {
   background: var(--proj);
@@ -229,7 +231,7 @@ button { font-family: inherit; }
 
 .section__head h2 {
   margin: 12px 0 6px;
-  font: 500 60px/1 'Cormorant Garamond', serif;
+  font: 500 clamp(42px, 5vw, 68px)/1 'Cormorant Garamond', serif;
 }
 
 .section__head p {
@@ -240,7 +242,7 @@ button { font-family: inherit; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 22px;
 }
 
@@ -345,13 +347,13 @@ button { font-family: inherit; }
 .contact {
   background: var(--deep);
   color: var(--on-acc);
-  padding: 88px 56px 64px;
+  padding: 88px var(--pad) 64px;
   text-align: center;
 }
 
 .contact .section__num { color: inherit; }
 
-.contact h2 { margin: 16px 0 0; font: 700 84px/1 'Grenze', serif; }
+.contact h2 { margin: 16px 0 0; font: 700 clamp(46px, 6.5vw, 96px)/1 'Grenze', serif; }
 
 .contact__mail {
   display: inline-block;
@@ -384,7 +386,7 @@ button { font-family: inherit; }
   background: var(--deep);
   color: var(--on-acc);
   border-top: 1px solid rgba(197, 197, 197, .25);
-  padding: 22px 56px 28px;
+  padding: 22px var(--pad) 28px;
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -464,27 +466,20 @@ button { font-family: inherit; }
 }
 
 /* ---------- responsive ---------- */
-@media (max-width: 1100px) {
-  .hero h1 { font-size: 96px; }
-  .hero { grid-template-columns: 1fr 300px; gap: 40px; }
-  .grid { grid-template-columns: repeat(2, 1fr); }
-  .contact h2 { font-size: 64px; }
-}
-
 @media (max-width: 760px) {
-  .topbar { padding: 16px 22px; }
+  :root { --pad: 22px; }
+  .topbar { padding: 16px var(--pad); }
   .topbar__title { font-size: 11px; letter-spacing: .18em; }
   .topbar__nav a { display: none; }
 
   .hero {
     grid-template-columns: 1fr;
-    padding: 40px 22px 34px;
+    padding: 40px var(--pad) 34px;
     text-align: center;
     gap: 30px;
   }
   .avatar-wrap { order: -1; }
   .avatar { width: 220px; }
-  .hero h1 { font-size: 64px; }
   .ornament { justify-content: center; margin: 20px 0 18px; }
   .hero__text { font-size: 16px; line-height: 1.65; margin: 0 auto 26px; }
   .hero__cta { justify-content: center; gap: 8px; }
@@ -492,22 +487,21 @@ button { font-family: inherit; }
 
   .marquee__group { gap: 24px; padding: 11px 14px; font-size: 16px; }
 
-  .section { padding: 44px 22px; }
+  .section { padding: 44px var(--pad); }
   .section__head { margin-bottom: 30px; }
-  .section__head h2 { font-size: 42px; }
   .section__head p { font-size: 15px; }
-  .grid { grid-template-columns: 1fr; gap: 14px; }
+  .grid { gap: 14px; }
   .card__body { padding: 18px; gap: 8px; }
   .card__title { font-size: 26px; }
   .card__desc { font-size: 14px; line-height: 1.55; }
   .cert__title { font-size: 24px; }
 
-  .contact { padding: 48px 22px 36px; }
-  .contact h2 { font-size: 46px; line-height: 1.05; }
+  .contact { padding: 48px var(--pad) 36px; }
+  .contact h2 { line-height: 1.05; }
   .contact__mail { font-size: 19px; margin-top: 20px; }
   .contact__links { gap: 8px; margin-top: 22px; font-size: 11px; letter-spacing: .12em; }
   .contact__links a { padding: 11px 16px; }
-  .footer { padding: 18px 22px 24px; flex-direction: column; text-align: center; font-size: 10px; }
+  .footer { padding: 18px var(--pad) 24px; flex-direction: column; text-align: center; font-size: 10px; }
 
   .overlay { padding: 16px; }
   .dialog__title { font-size: 26px; }
