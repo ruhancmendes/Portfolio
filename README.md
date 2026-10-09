@@ -6,7 +6,7 @@ Meu portfólio pessoal: uma página responsiva com os meus projetos, certificaç
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-sobre-o-projeto">Sobre o Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
@@ -44,8 +44,7 @@ My personal portfolio: a responsive page showcasing my projects, certifications 
 
 <p align="center">
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-about-the-project">About the Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-running-locally">Running locally</a>
+  <a href="#-about-the-project">About the Project</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <p align="center">
