@@ -93,3 +93,16 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeAll();
 });
+
+/* ---------- hero mouse glow ---------- */
+const hero = $('.hero');
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  hero.addEventListener('mousemove', (e) => {
+    const r = hero.getBoundingClientRect();
+    hero.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
+    hero.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
+  });
+}
+
+/* ---------- back to top ---------- */
+$('#to-top').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
